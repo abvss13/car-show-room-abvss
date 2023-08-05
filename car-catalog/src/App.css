@@ -1,0 +1,273 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(45deg, #c8c7db, #252928e0);
+  color: #333;
+}
+
+/* Header styles */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #475355;
+  padding: 10px;
+  text-align: center;
+}
+
+.app-header {
+  background-color: #0d0f0fc7;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Main container styles */
+.car-app {
+  padding: 20px;
+}
+
+/* Filter section styles */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-section input,
+.filter-section select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.filter-section input::placeholder,
+.filter-section select option {
+  color: #999;
+}
+
+/* Car list styles */
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Car Card Styles */
+.car-card {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f4f4f4;
+  background-image: linear-gradient(45deg, #cfd7e4, #4a5350);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.car-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.car-card-content {
+  padding: 16px;
+}
+
+.car-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2f2f2f;
+}
+
+.car-card p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.car-card .details {
+  padding-top: 12px;
+  color: #777;
+}
+
+.car-card.active .details {
+  display: block;
+}
+
+.car-card.active {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.car-card .show-details-btn {
+  background-image: linear-gradient(45deg, #3d503ddc, #2f3449d2);
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.car-card.active .show-details-btn {
+  background-color: #37408a;
+}
+
+.car-card .delete-btn {
+  background-image: linear-gradient(45deg, #4a5555, #e0e3e7);
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.car-card .delete-btn:hover {
+  background-image: linear-gradient(45deg, #206e19e5, #112fb8);
+}
+
+.no-items-msg {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.car-app-title {
+  font-size: 32px;
+  color: #10a53d;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Brand List Styles */
+.brand-list {
+  margin-bottom: 20px;
+}
+
+.brand-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #10a53d;
+  text-align: center;
+  font-weight: bold;
+}
+
+.brand-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brand-list li {
+  margin: 5px;
+}
+
+.brand-list button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand-list button:hover {
+  background-color: #0056b3;
+}
+
+/* Brand Details Styles */
+.brand-details {
+  text-align: center;
+}
+
+.brand-details h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #10a53d;
+  font-weight: bold;
+}
+
+.brand-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand-details li {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.brand-details img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.brand-details h3 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.brand-details p {
+  font-size: 16px;
+  margin: 3px 0;
+  color: #555;
+}
+
+/* Back button styles */
+.brand-details .back-btn {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand-details .back-btn:hover {
+  background-color: #b3b3b3;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .car-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
